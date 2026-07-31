@@ -16,6 +16,17 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Docker
+
+The frontend is included in the main Compose stack from `../compose.yaml`.
+
+```bash
+cd ..
+docker compose up -d frontend
+```
+
+The container listens on [http://localhost:3000](http://localhost:3000). Inside Compose it proxies API requests to `http://backend:8000` via `BACKEND_URL`.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

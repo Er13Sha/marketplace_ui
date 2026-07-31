@@ -1,26 +1,80 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f8f6;
+  --foreground: #17211c;
+  --color-page: #f7f8f6;
+  --color-surface: #ffffff;
+  --color-surface-soft: #fafbf9;
+  --color-surface-muted: #f1f5f2;
+  --color-border: #d8e2dc;
+  --color-border-strong: #bbcbbf;
+  --color-text: #17211c;
+  --color-text-soft: #4f6158;
+  --color-text-muted: #607268;
+  --color-primary: #29436f;
+  --color-primary-hover: #1d593d;
+  --color-primary-ring: rgb(36 107 74 / 18%);
+  --color-accent: #b85b2f;
+  --color-accent-hover: #9e4b26;
+  --color-accent-disabled: #d9ad99;
+  --color-ink: #17211c;
+  --color-ink-hover: #27362f;
+  --color-error-bg: #fff4ef;
+  --color-error-border: #efc7b9;
+  --color-error-text: #8d3f2b;
+  --color-success-bg: #eef8f1;
+  --color-success-border: #b9d9c7;
+  --color-success-text: #1f6844;
+  --color-skeleton: #e5ece7;
+  --color-disabled: #97a79d;
+  --shadow-card: rgb(23 33 28 / 6%);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-page: var(--color-page);
+  --color-surface: var(--color-surface);
+  --color-surface-soft: var(--color-surface-soft);
+  --color-surface-muted: var(--color-surface-muted);
+  --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
+  --color-text: var(--color-text);
+  --color-text-soft: var(--color-text-soft);
+  --color-text-muted: var(--color-text-muted);
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-primary-ring: var(--color-primary-ring);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-accent-disabled: var(--color-accent-disabled);
+  --color-ink: var(--color-ink);
+  --color-ink-hover: var(--color-ink-hover);
+  --color-error-bg: var(--color-error-bg);
+  --color-error-border: var(--color-error-border);
+  --color-error-text: var(--color-error-text);
+  --color-success-bg: var(--color-success-bg);
+  --color-success-border: var(--color-success-border);
+  --color-success-text: var(--color-success-text);
+  --color-skeleton: var(--color-skeleton);
+  --color-disabled: var(--color-disabled);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
 }
