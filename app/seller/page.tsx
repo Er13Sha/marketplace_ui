@@ -1,4 +1,4 @@
-import { SellerCabinetPage } from "@/features/seller/presentation/seller-cabinet-page";
+import { SellerCabinetPage } from "@/screens/seller";
 
 export default function SellerPage() {
   return <SellerCabinetPage />;

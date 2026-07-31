@@ -4,4 +4,4 @@ export {
   proxyBackendRequest as PATCH,
   proxyBackendRequest as POST,
   proxyBackendRequest as PUT,
-} from "@/shared/api/backend-proxy";
+} from "@/shared/api";

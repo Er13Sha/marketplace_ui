@@ -1,4 +1,4 @@
-import { AccountPage } from "@/features/account/presentation/account-page";
+import { AccountPage } from "@/screens/account";
 
 export default function AccountRoute() {
   return <AccountPage />;

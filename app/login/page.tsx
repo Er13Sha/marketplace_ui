@@ -1,4 +1,4 @@
-import { CustomerLoginPage } from "@/features/auth/presentation/customer-login-page";
+import { CustomerLoginPage } from "@/screens/login";
 
 const oauthErrors: Record<string, string> = {
   google_not_configured:

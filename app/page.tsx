@@ -1,4 +1,4 @@
-import { MarketplacePage } from "@/features/marketplace/presentation/marketplace-page";
+import { MarketplacePage } from "@/screens/marketplace";
 
 export default function Home() {
   return <MarketplacePage />;

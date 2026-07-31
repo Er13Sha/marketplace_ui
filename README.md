@@ -27,7 +27,7 @@ docker compose up -d frontend
 
 The container listens on [http://localhost:3000](http://localhost:3000). Inside Compose it proxies API requests to `http://backend:8000` via `BACKEND_URL`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The route files in `app/` are intentionally thin. Screen code lives in the corresponding `screens/` slice; see `docs/architecture.md` before adding new modules.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
